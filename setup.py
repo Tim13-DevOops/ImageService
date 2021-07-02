@@ -8,13 +8,16 @@ setup(
     author_email="branislav.andjelic@uns.ac.rs",
     packages=find_packages(),
     tests_require=["pytest"],
-    install_requires=[
+    setup_requires=[
         "flask",
+    ],
+    install_requires=[
         "flask-cors",
     ],
     entry_points={
         "console_scripts": [
-            "start_server=app.app:main",
+            "start_image_server=app.app:main",
         ]
     },
+    include_package_data=True,
 )

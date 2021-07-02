@@ -14,6 +14,4 @@ RUN dos2unix /work/entrypoint.sh && apt-get --purge remove -y dos2unix && rm -rf
 
 ADD /app /work/app/
 
-ADD /test /work/test/
-
 ENTRYPOINT ["sh", "/work/entrypoint.sh"]
