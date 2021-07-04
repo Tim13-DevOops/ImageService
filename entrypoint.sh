@@ -8,7 +8,8 @@ then
   # python setup.py install
   # start_image_server
   cd app
-  python app.py
+  # flask run
+  python -m app
 fi
 
 exec "$@"

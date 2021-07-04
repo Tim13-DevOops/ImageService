@@ -13,6 +13,8 @@ setup(
     ],
     install_requires=[
         "flask-cors",
+        "prometheus-flask-exporter",
+        "flask",
     ],
     entry_points={
         "console_scripts": [
