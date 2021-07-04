@@ -20,11 +20,6 @@ metrics = PrometheusMetrics(app)
 def send_file(imageId):
     print(imageId)
     return send_from_directory(f'{image_directory}', imageId)
-
-@app.route("/henlo")
-def get():
-    return jsonify({"henlo": "henlo"})
-
     
 @app.route('/', methods=['POST'])
 def upload_file():
