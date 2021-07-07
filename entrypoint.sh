@@ -8,7 +8,7 @@ then
   # python setup.py install
   # start_image_server
   cd app
-  python app.py
+  python -m app
 fi
 
 exec "$@"
